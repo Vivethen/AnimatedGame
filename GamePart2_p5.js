@@ -191,6 +191,13 @@ rect(H7,170,35,heightH7);
 rect(H8,170,35,heightH8);
 rect(H9,170,35,heightH9);
 rect(H10,170,35,heightH10);
+rect(5, 195, 399, 166);
+fill(230, 255, 0);
+rect(H1*1.3, 268 ,44, 11);
+rect(H3*1.3, 268 ,44, 11);
+rect(H5*1.3, 268 ,44, 11);
+rect(H7*1.3, 268 ,44, 11);
+rect(H9*1.3, 268 ,44, 11);
 
 //score
 textSize(30);
@@ -235,11 +242,11 @@ ellipse(H3 + 25, 170, 60, 60);
 ellipse(H5 + 25, 160, 60, 60);
 ellipse(H7 + 25, 250, 60, 60);
 ellipse(H9 + 25, 190, 60, 60);
- fill(x, y, x);
+ fill(random(50,350),random(50,350), random(50,350));
  ellipse(H1 + x, y, 30 ,30);
  ellipse(H3 + x, y + 200, 30 ,30);    
  ellipse(H6 + x, y + -200, 30 ,30);
- fill(y, x, y);
+fill(random(50,350),random(50,350), random(50,350));
  ellipse(H1 + -8 + x, y, 5, 5);
  ellipse(H1 + 8 + x, y, 5, 5);
  ellipse(H1 + x, y + 5, 7, 16);
@@ -438,10 +445,11 @@ ellipse(fighterjetX + 25,fighterjetY,20,18);
 fill(0, 0, 0);
 rect(fighterjetX + 5,fighterjetY - 10,20,19);
 // Star Power
-fill(255, 238, 0);
+fill(random(50,350),random(50,350), random(50,350));
 ellipse(speedSterX, speedSterY,20,20);
-fill(255, 247, 0);
+fill(random(50,350),random(50,350), random(50,350));
 ellipse(speedSterX,speedSterY,starPower,starPower);
+
 
 
     if (keyIsPressed && keyCode === 38) {
