@@ -9,7 +9,6 @@ function draw() {
 
 var score = 9500;
 var lives = 3;
-var imgl;
 var a = Math.random(5, 395);
 var b = Math.random(5, 395);
 var c = Math.random(5, 395);
