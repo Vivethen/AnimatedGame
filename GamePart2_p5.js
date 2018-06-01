@@ -7,7 +7,7 @@ function draw() {
 
 }
 
-var score = 9500;
+var score = 0;
 var lives = 3;
 var a = Math.random(5, 395);
 var b = Math.random(5, 395);
