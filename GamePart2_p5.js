@@ -9,7 +9,7 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
 	noStroke();
-	 mySound.setVolume(1.0);
+	 mySound.setVolume(0.5);
   mySound.loop();
 }
 
