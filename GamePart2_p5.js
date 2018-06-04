@@ -9,7 +9,7 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
 	noStroke();
-	 mySound.setVolume(0.1);
+	 mySound.setVolume(0.5);
   mySound.loop();
 }
 
@@ -982,4 +982,3 @@ mouseClicked = function(){
 //remove later
 //println("vhevk"+ i++);
 //remove later
- 
