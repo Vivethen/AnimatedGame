@@ -437,7 +437,7 @@ if (lives === 2){
     }
 
 //The Magic Shooter
-if (score > 3000){
+if (score >15000){
 fill(179, 0, 255);
 rect(shooterX,shooterY - 10,40,40);
 fill(161, 23, 23);
