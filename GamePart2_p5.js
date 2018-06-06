@@ -1057,8 +1057,7 @@ mouseClicked = function(){
   }
 };
 
-//remove later
-//var i = 0;
-//remove later
-//println("vhevk"+ i++);
-//remove later
+//Creators
+// Vivethen Balachandiran - Coding
+// Sam - Coding
+// Alon Halfin - Music
