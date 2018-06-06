@@ -111,7 +111,16 @@ if (score > 10000){
     textAlign(CENTER, CENTER);
     text("Achievement: Dry Dry Desert!", 207, 159);
     }
-
+    
+fill(47, 255, 0);
+rect(0,347,115,50);
+fill(0, 0, 0);
+textSize(20);
+text("Click To", 53,362);
+text("Try Again!", 53,384);
+if (mouseIsPressed && mouseX > 0 && mouseY > 350 && mouseX < 115 && mouseY < 400) { 
+currentScene = 3;
+     }
 };
 var drawScene2 = function(){
     currentScene = 2;
@@ -162,6 +171,21 @@ if (score > 25000){
     textAlign(CENTER, CENTER);
     text("Achievement: Dry Dry Desert!", 207, 159);
     }
+    
+
+fill(47, 255, 0);
+rect(0,347,115,50);
+fill(0, 0, 0);
+textSize(20);
+text("Click To", 53,362);
+text("Try Again!", 53,384);
+if (mouseIsPressed && mouseX > 0 && mouseY > 350 && mouseX < 115 && mouseY < 400) { 
+currentScene = 3;
+     }
+};
+var drawScene3 = function(){
+    currentScene = 3;
+
 };
 
 
@@ -189,6 +213,7 @@ rect(H3*1.3, 268 ,44, 11);
 rect(H5*1.3, 268 ,44, 11);
 rect(H7*1.3, 268 ,44, 11);
 rect(H9*1.3, 268 ,44, 11);
+
 
 
 //score
@@ -922,6 +947,63 @@ if (score > 50000){
         speedSterX += 15;
         score--;
     }
+    if (currentScene === 3){
+score = 0;
+lives = 3;
+a = random(5, 395);
+b = random(5, 395);
+c = random(5, 395);
+d = random(5, 395);
+e = random(5, 395);
+f = random(5, 395);
+w = 0;
+ww = 0;
+www = 0;
+wwww = 0;
+wwwww = 0;
+carX = -5000;
+carY = random(50,350);
+fighterjetX = -2500;
+fighterjetY = random(50,350);
+speedSterX = 0;
+speedSterY = random(-50,-450);
+ob = 0;
+H1 = 0.00;
+H2 = 40.897;
+H3 = H2*2;
+H4 = H2*3;
+H5 = H2*4;
+H6 = H2*5;
+H7 = H2*6;
+H8 = H2*7;
+H9 = H2*8;
+H10 = H2*9;
+heightH1 = random(-60, -150);
+heightH2 = random(-60, -150);
+heightH3 = random(-60, -150);
+heightH4 = random(-60, -150);
+heightH5 = random(-60, -150);
+heightH6 = random(-60, -150);
+heightH7 = random(-60, -150);
+heightH8 = random(-60, -150);
+heightH9 = random(-60, -150);
+heightH10 = random(-60, -150);
+spaceSpeed = 0;
+starPower = 0;
+sun = 430;
+x = 81;
+y = 312;
+z = 81;
+shooterX = 400;
+shooterY = random(50,350);
+zz = shooterX;
+v = y;
+zize = function (xx,yy) {
+    zize.x = xx;
+    zize.y = yy;
+};
+
+    }
     
 w -= 3;
 ww -= 4;
@@ -942,12 +1024,11 @@ H8 -= 2.75;
 H9 -= 2.75;
 H10 -= 2.75;
 sun -= 0.5;
+
+
 };
 
-mouseClicked = function(){
-  if (currentScene === 1) {
-  }
-};
+
 
 //remove later
 //var i = 0;
