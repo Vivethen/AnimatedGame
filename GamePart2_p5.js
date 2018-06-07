@@ -797,6 +797,9 @@ if (score > 50000){
                 if (spaceSpeed >= 1 && spaceSpeed <= 560){
                 spaceSpeed++;
                 zz = -1000;
+		if (score < 25000){
+                   spaceSpeed += 3;
+                }
                 if (spaceSpeed === 560){
                     spaceSpeed = 0;
                     fighterjetX = - 1500;
@@ -932,7 +935,7 @@ if (score > 50000){
     }
     if ( score === 5000){
         carX = -100;
-        fighterjetX = -1000;
+        fighterjetX = -5000;
     }
     if (lives === 0){
         currentScene = 1;
