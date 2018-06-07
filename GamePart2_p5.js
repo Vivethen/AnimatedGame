@@ -1058,6 +1058,7 @@ mouseClicked = function(){
 };
 
 //Creators
-// Vivethen Balachandiran - Coding
-// Sam - Coding
-// Alon Halfin - Music
+//Vivethen Balachandiran - Coding
+//Sam Vrontos - Coding
+//Alon Halfin - Music
+//Katy...
