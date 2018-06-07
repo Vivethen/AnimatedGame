@@ -219,7 +219,7 @@ rect(H9*1.3, 268 ,44, 11);
 //score
 textSize(30);
 fill(0, 0, 0);
-text("Score: " + score, 20, 30);
+text("Score: " + score, 100, 30);
 score++;
 //lives
 text("Lives: " + lives, 280, 30);
@@ -270,7 +270,7 @@ rect(ww,b,20,20);
 rect(www,c,20,20);
 
     fill(201, 54, 201);
-    text("Score: " + score, 20, 30);
+    text("Score: " + score, 100, 30);
     text("Lives: " + lives, 280, 30);
     }
 
@@ -311,7 +311,7 @@ if (score > 25000){
     rect(www,c,20,20);
     
     fill(199, 79, 55);
-    text("Score: " + score, 20, 30);
+    text("Score: " + score, 100, 30);
     text("Lives: " + lives, 280, 30);
 }
 if (score > 50000){
@@ -370,7 +370,7 @@ if (score > 50000){
     rect(www,c,20,20);
     
     fill(0, 0, 0);
-    text("Score: " + score, 20, 30);
+    text("Score: " + score, 100, 30);
     text("Lives: " + lives, 280, 30);
     }
     
@@ -410,7 +410,7 @@ if (lives === 2){
     }
 
 //The Magic Shooter
-if (score > 3000){
+if (score > 15000){
 fill(179, 0, 255);
 rect(shooterX,shooterY - 10,40,40);
 fill(161, 23, 23);
@@ -511,7 +511,7 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
     if (spaceSpeed >= wwww && d) {
         d = -800;
         fill(0, 0, 255);
-        text("Score: " + score, 20, 30);
+        text("Score: " + score, 100, 30);
         text("Lives: " + lives, 280, 30);
         score += 10;
     }
@@ -547,7 +547,7 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
      if (spaceSpeed >= wwwww && e) {
         e = -800;
         fill(0, 0, 255);
-        text("Score: " + score, 20, 30);
+        text("Score: " + score, 100, 30);
         text("Lives: " + lives, 280, 30);
         score += 10;
     }
@@ -879,28 +879,28 @@ if (score > 50000){
     if (spaceSpeed >= w && a) {
         a = -800;
         fill(0, 0, 255);
-        text("Score: " + score, 20, 30);
+        text("Score: " + score, 100, 30);
         text("Lives: " + lives, 280, 30);
         score += 10;
     }
     if (spaceSpeed >= ww && b) {
         b = -800;
         fill(0, 0, 255);
-        text("Score: " + score, 20, 30);
+        text("Score: " + score, 100, 30);
         text("Lives: " + lives, 280, 30);
         score += 10;
     }
     if (spaceSpeed >= www && c) {
         c = -800;
         fill(0, 0, 255);
-        text("Score: " + score, 20, 30);
+        text("Score: " + score, 100, 30);
         text("Lives: " + lives, 280, 30);
         score += 10;
     }
     if (spaceSpeed >= shooterX && shooterY) {
         shooterX = 1000;
         fill(0, 0, 255);
-        text("Score: " + score, 20, 30);
+        text("Score: " + score, 100, 30);
         text("Lives: " + lives, 280, 30);
         score += 1000;
     }
@@ -1002,7 +1002,6 @@ zize = function (xx,yy) {
     zize.x = xx;
     zize.y = yy;
 };
-
     }
     
 w -= 3;
@@ -1030,8 +1029,8 @@ sun -= 0.5;
 
 
 
-//remove later
-//var i = 0;
-//remove later
-//println("vhevk"+ i++);
-//remove later
+//Creators
+//Vivethen Balachandiran - Coding
+//Sam - Vrontos
+//Alon Halfin - Music
+//Katy...
