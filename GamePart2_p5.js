@@ -18,7 +18,7 @@ function draw() {
 }
 
 var score = 0;
-var lives = 3;
+var lives = 5;
 var a = Math.random(5, 395);
 var b = Math.random(5, 395);
 var c = Math.random(5, 395);
@@ -749,7 +749,15 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
         wwww = 400;
         d = random(5, 395);
     }
-        if (d < y + 40 && d > y - 20 && wwww < x + 40 && wwww > x - 20 && lives === 3) {
+    if (d < y + 40 && d > y - 20 && wwww < x + 40 && wwww > x - 20 && lives === 5) {
+        lives = 4;
+        wwww = 400;
+    }
+    if (d < y + 40 && d > y - 20 && wwww < x + 40 && wwww > x - 20 && lives === 4) {
+        lives = 3;
+        wwww = 400;
+    }
+    if (d < y + 40 && d > y - 20 && wwww < x + 40 && wwww > x - 20 && lives === 3) {
         lives = 2;
         wwww = 400;
     }
@@ -784,6 +792,14 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
     if (wwwww < -5) {
         wwwww = 400;
         e = random(5, 395);
+    }
+    if (e < y + 40 && e > y - 20 && wwwww < x + 40 && wwwww > x - 20 && lives === 5) {
+        lives = 4;
+        wwwww = 400;
+    }
+    if (e < y + 40 && e > y - 20 && wwwww < x + 40 && wwwww > x - 20 && lives === 4) {
+        lives = 3;
+        wwwww = 400;
     }
     if (e < y + 40 && e > y - 20 && wwwww < x + 40 && wwwww > x - 20 && lives === 3) {
         lives = 2;
@@ -1063,6 +1079,14 @@ if (score > 100000){
             }
         }
     }
+    if (a < y + 40 && a > y - 20 && w < x + 40 && w > x - 20 && lives === 5) {
+        lives = 4;
+        w = 400;
+    }
+    if (a < y + 40 && a > y - 20 && w < x + 40 && w > x - 20 && lives === 4) {
+        lives = 3;
+        w = 400;
+    }
     if (a < y + 40 && a > y - 20 && w < x + 40 && w > x - 20 && lives === 3) {
         lives = 2;
         w = 400;
@@ -1074,6 +1098,14 @@ if (score > 100000){
     if (a < y + 40 && a > y - 20 && w < x + 40 && w > x - 20 && lives === 1) {
         drawScene1();
     }
+    if (b < y + 40 && b > y - 20 && ww < x + 40 && ww > x - 20 && lives === 5) {
+        lives = 4;
+        ww = 400;
+    }
+    if (b < y + 40 && b > y - 20 && ww < x + 40 && ww > x - 20 && lives === 4) {
+        lives = 3;
+        ww = 400;
+    }
     if (b < y + 40 && b > y - 20 && ww < x + 40 && ww > x - 20 && lives === 3) {
         lives = 2;
         ww = 400;
@@ -1084,6 +1116,14 @@ if (score > 100000){
     }
     if (b < y + 40 && b > y - 20 && ww < x + 40 && ww > x - 20 && lives === 1) {
         drawScene1();
+    }
+    if (c < y + 40 && c > y - 20 && www < x + 40 && www > x - 20 && lives === 5) {
+        lives = 4;
+        www = 400;
+    }
+    if (c < y + 40 && c > y - 20 && www < x + 40 && www > x - 20 && lives === 4) {
+        lives = 3;
+        www = 400;
     }
     if (c < y + 40 && c > y - 20 && www < x + 40 && www > x - 20 && lives === 3) {
         lives = 2;
@@ -1217,7 +1257,7 @@ if (score > 100000){
     }
 	if (currentScene === 3){
 score = 0;
-lives = 3;
+lives = 5;
 a = Math.random(5, 395);
 b = Math.random(5, 395);
 c = Math.random(5, 395);
