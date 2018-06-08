@@ -373,6 +373,207 @@ if (score > 50000){
     text("Score: " + score, 100, 30);
     text("Lives: " + lives, 280, 30);
     }
+    if (score > 100000){
+    ellipse(H3 + 15, 261, 131, 43);
+    background(0, 0, 0);
+    fill(255, 230, 5);
+    ellipse(sun,10,60,60);
+    fill(0, 77, 255);
+    ellipse(211, 385, 562, 500);
+    //city Island
+    fill(235, 191, 235);
+    ellipse(H1, 332, 131, 43);
+    fill(0, 0, 0);
+    rect(H1 + -22, 299, 11, 20);
+    rect(H1 + -9, 289, 11, 30);
+    rect(H1 + 17, 289, 11, 30);
+    rect(H1 + 5, 281, 11, 38);
+    rect(H1 + 31, 299, 11, 20);
+    rect(H1 + -34, 290, 11, 30);
+    rect(H1 + -46, 300, 11, 20);
+    fill(89, 70, 70);
+    rect(H1 + -66, 325, 132, 14);
+    fill(228, 240, 0);
+    rect(H1 + 0, 330, 10, 3);
+    rect(H1 + 19, 330, 10, 3);
+    rect(H1 + 37, 330, 10, 3);
+    rect(H1 + -18, 330, 10, 3);
+    rect(H1 + -36, 330, 10, 3);
+    rect(H1 + -53, 330, 10, 3);
+    rect(H1 + 54, 330, 10, 3);
+    
+    //Spooky forest
+    fill(12, 34, 230);
+    ellipse(H3 + 9, 258, 120, 31);
+    fill(41, 99, 38);
+    ellipse(H6, 298, 147, 43);
+    fill(97, 70, 34);
+    rect(H6 + 0, 266, 5, 20); 
+    rect(H6 + 18, 269, 5, 20); 
+    rect(H6 + 10, 269, 5, 20); 
+    rect(H6 + 29, 269, 5, 20); 
+    rect(H6 + 23, 261, 5, 20); 
+    rect(H6 + 18, 269, 5, 20); 
+    rect(H6 + -26, 269, 5, 20); 
+    rect(H6 + -35, 269, 5, 20); 
+    rect(H6 + -15, 271, 5, 20); 
+    rect(H6 + -7, 267, 5, 20); 
+    rect(H6 + 40, 269, 5, 20); 
+    rect(H6 + 48, 269, 5, 21); 
+    rect(H6 + -48, 269, 5, 20); 
+    rect(H6 + -59, 272, 5, 20); 
+    ellipse(H6, 298, 136, 21);
+    fill(41, 99, 38);
+    ellipse(H6 + 3, 266, 20, 20); 
+    ellipse(H6 + 22, 262, 20, 20); 
+    ellipse(H6 + 20, 266, 20, 20); 
+    ellipse(H6 + 32, 266, 20, 20);
+    ellipse(H6 + 43, 266, 20, 20);
+    ellipse(H6 + 49, 266, 20, 20);
+    ellipse(H6 + -11, 266, 20, 20);
+    ellipse(H6 + -24, 270, 20, 20);
+    ellipse(H6 + -46, 268, 20, 20);
+    ellipse(H6 + -57, 272, 20, 20);
+    ellipse(H6 + -36, 265, 20, 20);
+    fill(255, 255, 255);
+    ellipse(H6 + 48, 266, 5, 5); 
+    ellipse(H6 + 23, 281, 5, 5); 
+    ellipse(H6 + -11, 275, 5, 5); 
+    ellipse(H6 + -36, 266, 5, 5); 
+    ellipse(H6 + -1, 295, 10, 10); 
+    fill(255, 0, 0);
+    ellipse(H6 + -4, 294, 3, 3); 
+    ellipse(H6 + 2, 294, 3, 3); 
+    
+    //Ocean city
+    fill(87, 99, 91);
+    rect(H3 + 0, 222, 9, 36);
+    rect(H3 + 12, 226, 9, 29);
+    rect(H3 + -11, 237, 9, 19);
+    rect(H3 + 25, 237, 9, 19);
+    rect(H3 + 37, 222, 9, 35);
+    rect(H3 + -24, 222, 9, 35);
+    
+    rect(H3 + 37, 219, 3, 30);
+    rect(H3 + 25, 232, 3, 8);
+    rect(H3 + 12, 219, 3, 30);
+    rect(H3 + 37, 219, 3, 30);
+    rect(H3 + 37, 219, 3, 30);
+    rect(H3 + 37, 219, 3, 30);
+    rect(H3 + 0, 218, 3, 30);
+    rect(H3 + -12, 232, 3, 6);
+    rect(H3 + -24, 218, 3, 30);
+    
+    fill(0, 0, 0);
+    ellipse(H3 + 41, 231, 5, 5);
+    ellipse(H3 + 30, 244, 5, 5);
+    ellipse(H3 + 17, 234, 5, 5);
+    ellipse(H3 + 5, 231, 5, 5);
+    ellipse(H3 + -6, 243, 5, 5);
+    ellipse(H3 + -19, 231, 5, 5);
+    fill(0, 162, 255);
+    ellipse(H3 + 54, 231, 4, 4);
+    ellipse(H3 + 3, 250, 4, 4);
+    ellipse(H3 + 24, 237, 4, 4);
+    ellipse(H3 + -32, 225, 4, 4);
+    ellipse(H3 + -16, 237, 4, 4);
+    ellipse(H3 + 24, 237, 4, 4);
+    ellipse(H3 + 39, 250, 4, 4);
+    ellipse(H3 + 3, 234, 4, 4);
+    
+    //Dry Dry Desert
+   fill(213, 224, 4);
+   ellipse(H8 + -6 , 376, 131, 36);
+   fill(34, 176, 2);
+   rect(H8 + -9, 344, 11, 22);
+   rect(H8 + 5, 340, 11, 23);
+   rect(H8 + 19, 330, 11, 38); 
+   rect(H8 + 33, 346, 11, 28); 
+   rect(H8 + -23, 336, 11, 28); 
+   rect(H8 + -38, 342, 11, 28); 
+   rect(H8 + -53, 354, 11, 16); 
+   rect(H8 + -66, 346, 11, 28);  
+   
+   ellipse(H8 + 39, 344, 11, 28);
+   ellipse(H8 + 25, 328, 11, 28); 
+   ellipse(H8 + 10.5, 344, 11, 28);
+   ellipse(H8 + -3, 344, 11, 28);
+   ellipse(H8 + -17.5, 333, 11, 28); 
+   ellipse(H8 + -32, 344, 11, 28); 
+   ellipse(H8 + -47, 351, 11, 28); 
+   ellipse(H8 + -60.5, 344, 11, 28); 
+    
+    fill(82, 17, 17);
+    ellipse(H8 + 39, 377, 19, 7);
+    ellipse(H8 + 1, 371, 19, 7);
+    ellipse(H8 + 18, 380, 19, 7);
+    ellipse(H8 + -55, 380, 19, 7);
+    ellipse(H8 + -19, 387, 19, 7);
+    ellipse(H8 + -34, 374, 19, 7);
+    ellipse(H8 + -4, 380, 19, 7);
+    ellipse(H8 + 8, 389, 19, 7);
+
+    //Clouds
+    fill(255, 255, 255);
+    ellipse(H1 - 20, heightH1 + 397, 142, 42);
+    ellipse(H3 - 20, heightH3 + 507, 97, 42);
+    ellipse(H5 - 20, heightH5 + 329, 173, 42);
+    ellipse(H7 - 20, heightH7 + 455, 103, 42);
+    ellipse(H10 - 20, heightH10 + 254, 137, 42);
+    
+    //stars
+    fill(252, 246, 58);
+    ellipse(sun + 150,90,5,5);
+    ellipse(sun + 550,30,5,5);
+    ellipse(sun + 420,80,5,5);
+    ellipse(sun + 180,50,5,5);
+    ellipse(sun + 60,10,5,5);
+    ellipse(sun - 150,90,5,5);
+    ellipse(sun - 650,35,5,5);
+    ellipse(sun - 320,45,5,5);
+    ellipse(sun - 80,10,5,5);
+    ellipse(sun - 160,80,5,5);
+    ellipse(sun + 107,74,5,5);
+    ellipse(sun + 543,43,5,5);
+    ellipse(sun + 399,63,5,5);
+    ellipse(sun + 202,18,5,5);
+    ellipse(sun + 30,75,5,5);
+    ellipse(sun - 133,95,5,5);
+    ellipse(sun - 688,69,5,5);
+    ellipse(sun - 356,65,5,5);
+    ellipse(sun - 67,33,5,5);
+    ellipse(sun - 135,98,5,5);
+    ellipse(sun + 187,45,5,5);
+    ellipse(sun + 478,57,5,5);
+    ellipse(sun + 393,102,5,5);
+    ellipse(sun + 136,17,5,5);
+    ellipse(sun + 76,59,5,5);
+    ellipse(sun - 186,76,5,5);
+    ellipse(sun - 616,73,5,5);
+    ellipse(sun - 275,24,5,5);
+    ellipse(sun - 60,70,5,5);
+    ellipse(sun - 200,109,5,5);
+    ellipse(sun + 147,72,5,5);
+    ellipse(sun + 697,17,5,5);
+    ellipse(sun + 471,88,5,5);
+    ellipse(sun - 362,40,5,5);
+    ellipse(sun - 313,33,5,5);
+    ellipse(sun - 401,77,5,5);
+    ellipse(sun - 650,25,5,5);
+    ellipse(sun - 320,62,5,5);
+    ellipse(sun - 279,12,5,5);
+    ellipse(sun - 398,95,5,5);
+    ellipse(sun + 147,72,5,5);
+    ellipse(sun + 697,17,5,5);
+    ellipse(sun + 390,88,5,5);
+    ellipse(sun + 42,72,5,5);
+    ellipse(sun + 11,46,5,5);
+    ellipse(sun + 20,74,5,5);
+    ellipse(sun - 10,115,5,5);
+    ellipse(sun - 16,91,5,5);
+    ellipse(sun - 2,101,5,5);
+    ellipse(sun - 11,98,5,5);
+    }
     
 
 
