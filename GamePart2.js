@@ -75,6 +75,9 @@ if (score > 25000){
 if (score > 50000){
     background(184, 181, 108);
     }
+if (score >100000){
+    background(29, 30, 51);
+    }
 
 fill(255, 255, 255);
 textSize(22);
@@ -105,11 +108,22 @@ if (score > 10000){
     }
     if (score > 50000){
     fill(191, 90, 191);
-   rect(58, 134, 300, 51);
+    rect(58, 134, 300, 51);
     fill(251, 255, 8);
     textSize(22);
     textAlign(CENTER, CENTER);
-    text("Achievement: Dry Dry Desert!", 207, 159);
+    text("Achievement: Sandy Desert!", 207, 159);
+    }
+    if (score > 100000){
+    fill(191, 90, 191);
+    rect(58, 134, 300, 51);
+    fill(251, 255, 8);
+    textSize(22);
+    textAlign(CENTER, CENTER);
+    text("Achievement: Endless Space!", 207, 159);
+    textSize(30);
+    fill(66, 212, 202);
+    text("Score: " + score, 200, 350);
     }
     
 fill(47, 255, 0);
@@ -134,6 +148,9 @@ if (score > 25000){
     }
 if (score > 50000){
     background(184, 181, 108);
+    }
+if (score >100000){
+    background(29, 30, 51);
     }
 fill(255, 255, 255);
 textSize(22);
@@ -169,7 +186,18 @@ if (score > 25000){
     fill(251, 255, 8);
     textSize(22);
     textAlign(CENTER, CENTER);
-    text("Achievement: Dry Dry Desert!", 207, 159);
+    text("Achievement: Sandy Desert!", 207, 159);
+    }
+    if (score > 100000){
+    fill(191, 90, 191);
+    rect(58, 134, 300, 51);
+    fill(251, 255, 8);
+    textSize(22);
+    textAlign(CENTER, CENTER);
+    text("Achievement: Endless Space!", 207, 159);
+    textSize(30);
+    fill(66, 212, 202);
+    text("Score: " + score, 200, 350);
     }
     
 
@@ -515,10 +543,10 @@ if (score > 50000){
 
     //Clouds
     fill(255, 255, 255);
-    ellipse((H1*1.2) - 20, heightH1 + 397, 142, 42);
-    ellipse((H3*1.5) - 20, heightH3 + 507, 97, 42);
-    ellipse((H5*1.4) - 20, heightH5 + 329, 173, 42);
-    ellipse((H7*1.3) - 20, heightH7 + 455, 103, 42);
+    ellipse(H1 - 20, heightH1 + 397, 142, 42);
+    ellipse(H3 - 20, heightH3 + 507, 97, 42);
+    ellipse(H5 - 20, heightH5 + 329, 173, 42);
+    ellipse(H7 - 20, heightH7 + 455, 103, 42);
     ellipse(H10 - 20, heightH10 + 254, 137, 42);
     
     //stars
@@ -573,6 +601,15 @@ if (score > 50000){
     ellipse(sun - 16,91,5,5);
     ellipse(sun - 2,101,5,5);
     ellipse(sun - 11,98,5,5);
+    
+    fill(222, 162, 22);
+    rect(w,a,20,20);
+    rect(ww,b,20,20);
+    rect(www,c,20,20);
+    
+    fill(0, 255, 230);
+    text("Score: " + score, 100, 30);
+    text("Lives: " + lives, 280, 30);
     }
     
 
@@ -765,6 +802,11 @@ if (score > 25000){
     }
 if (score > 50000){
     fill(222, 22, 162);
+    rect(wwww,d,20,20);
+    rect(wwwww,e,20,20);
+    }
+    if (score > 100000){
+    fill(222, 162, 22);
     rect(wwww,d,20,20);
     rect(wwwww,e,20,20);
     }
