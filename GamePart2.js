@@ -127,12 +127,11 @@ if (score > 10000){
     }
     
 fill(47, 255, 0);
-rect(0,347,115,50);
+rect(50,227,300,50);
 fill(0, 0, 0);
-textSize(20);
-text("Click To", 53,362);
-text("Try Again!", 53,384);
-if (mouseIsPressed && mouseX > 0 && mouseY > 350 && mouseX < 115 && mouseY < 400) { 
+textSize(25);
+text("Click To Try Again!", 205,250);
+if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
 currentScene = 3;
      }
 };
@@ -202,12 +201,11 @@ if (score > 25000){
     
 
 fill(47, 255, 0);
-rect(0,347,115,50);
+rect(50,227,300,50);
 fill(0, 0, 0);
-textSize(20);
-text("Click To", 53,362);
-text("Try Again!", 53,384);
-if (mouseIsPressed && mouseX > 0 && mouseY > 350 && mouseX < 115 && mouseY < 400) { 
+textSize(25);
+text("Click To Try Again!", 205,250);
+if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
 currentScene = 3;
      }
 };
