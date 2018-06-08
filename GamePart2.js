@@ -515,10 +515,10 @@ if (score > 50000){
 
     //Clouds
     fill(255, 255, 255);
-    ellipse(H1 - 20, heightH1 + 397, 142, 42);
-    ellipse(H3 - 20, heightH3 + 507, 97, 42);
-    ellipse(H5 - 20, heightH5 + 329, 173, 42);
-    ellipse(H7 - 20, heightH7 + 455, 103, 42);
+    ellipse((H1*1.2) - 20, heightH1 + 397, 142, 42);
+    ellipse((H3*1.5) - 20, heightH3 + 507, 97, 42);
+    ellipse((H5*1.4) - 20, heightH5 + 329, 173, 42);
+    ellipse((H7*1.3) - 20, heightH7 + 455, 103, 42);
     ellipse(H10 - 20, heightH10 + 254, 137, 42);
     
     //stars
