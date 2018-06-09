@@ -1,6 +1,7 @@
 noStroke();
 var score = 0;
 var lives = 5;
+var highscore = 0;
 var a = random(5, 395);
 var b = random(5, 395);
 var c = random(5, 395);
@@ -89,7 +90,8 @@ textSize(25);
 text("You died to an enemy", -41, -10, 480, 200);
 textSize(30);
 fill(0, 0, 0);
-text("Score: " + score, 200, 350);
+text("Score: " + score, 200, 320);
+text("HighScore: " + highscore, 200, 360);
 if (score > 10000){
     fill(191, 90, 191);
      rect(58, 134, 300, 51);
@@ -123,7 +125,8 @@ if (score > 10000){
     text("Achievement: Endless Space!", 207, 159);
     textSize(30);
     fill(66, 212, 202);
-    text("Score: " + score, 200, 350);
+    text("Score: " + score, 200, 320);
+    text("HighScore: " + highscore, 200, 360);
     }
     
 fill(47, 255, 0);
@@ -161,7 +164,8 @@ textSize(25);
 text("You died to the border", -41, -10, 480, 200);
 textSize(30);
 fill(0, 0, 0);
-text("Score: " + score, 200, 350);
+text("Score: " + score, 200, 320);
+text("HighScore: " + highscore, 200, 360);
 
 if (score > 10000){
     fill(191, 90, 191);
@@ -196,7 +200,8 @@ if (score > 25000){
     text("Achievement: Endless Space!", 207, 159);
     textSize(30);
     fill(66, 212, 202);
-    text("Score: " + score, 200, 350);
+    text("Score: " + score, 200, 320);
+    text("HighScore: " + highscore, 200, 360);
     }
     
 
@@ -625,8 +630,25 @@ rect(z + 9, v + 8.2,25,10);
 fill(10, 28, 61);
 rect(x + 9, y + 8,10,25);
 rect(x + 9, y + 8,25,10);
-
-if (lives === 2){
+    if (lives === 4){
+        fill(225, 87, 230);
+        rect(x,y,40,40);
+        fill(110, 92, 92);
+        rect(z + 9, v + 8.2,25,10);
+        fill(10, 28, 61);
+        rect(x + 9, y + 8,10,25);
+        rect(x + 9, y + 8,25,10);
+    }
+    if (lives === 3){
+        fill(230, 225, 87);
+        rect(x,y,40,40);
+        fill(110, 92, 92);
+        rect(z + 9, v + 8.2,25,10);
+        fill(10, 28, 61);
+        rect(x + 9, y + 8,10,25);
+        rect(x + 9, y + 8,25,10);
+    }
+    if (lives === 2){
         fill(88, 232, 148);
         rect(x,y,40,40);
         fill(110, 92, 92);
@@ -930,6 +952,9 @@ if (score > 50000){
     if (fighterjetX > 500){
         fighterjetX = -1000;
         fighterjetY = random(0,395);
+    }
+    if (score >= highscore){
+        highscore = score;
     }
      if (mouseIsPressed){
         //reditcal
