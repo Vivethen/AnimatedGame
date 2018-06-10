@@ -764,6 +764,30 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
     if (keyIsPressed && keyCode === 40) {
         v += 4;
     } 
+    if (keyCode === 87) {
+        y -= 4;
+    } 
+    if (keyCode === 83) {
+        y += 4;
+    } 
+    if (keyCode === 65) {
+        x -= 4;
+    } 
+    if (keyCode === 68) {
+        x += 4;
+    } 
+    if (keyCode === 65) {
+        z -= 4;
+    } 
+    if (keyCode === 68) {
+        z += 4;
+    } 
+    if (keyCode === 87) {
+        v -= 4;
+    } 
+    if (keyCode === 83) {
+        v += 4;
+    } 
     if (score > 1000){
     fill(34, 191, 61);
     rect(wwww,d,20,20);
@@ -967,6 +991,12 @@ if (score > 100000){
     if (keyIsPressed && keyCode === 39) {
         z -= 4;
     } 
+    if (keyCode === 65){
+        z += 4;
+    }
+    if (keyCode === 68){
+        z -= 4;
+    }
     }
     if (carX > 200){
         carX -= 2;
@@ -1030,7 +1060,31 @@ if (score > 100000){
     } 
     if (keyIsPressed && keyCode === 40) {
         v += 2;
-        }
+    }
+    if (keyCode === 87) {
+        y -= 2;
+    } 
+    if (keyCode === 83) {
+        y += 2;
+    } 
+    if (keyCode === 65) {
+        x -= 2;
+    } 
+    if (keyCode === 68) {
+        x += 2;
+    } 
+    if (keyCode === 65) {
+        z -= 2;
+    } 
+    if (keyCode === 68) {
+        z += 2;
+    } 
+    if (keyCode === 87) {
+        v -= 2;
+    } 
+    if (keyCode === 83) {
+        v += 2;
+    } 
         }
     }
     
