@@ -134,9 +134,16 @@ rect(50,227,300,50);
 fill(0, 0, 0);
 textSize(25);
 text("Click To Try Again!", 205,250);
-if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
-currentScene = 3;
-     }
+if (mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
+    fill(36, 166, 3);
+    rect(50,227,300,50);
+    fill(0, 0, 0);
+    textSize(25);
+    text("Click To Try Again!", 205,250);
+        if (mouseIsPressed){
+        currentScene = 3;
+        }
+}
 };
 var drawScene2 = function(){
     currentScene = 2;
@@ -210,9 +217,16 @@ rect(50,227,300,50);
 fill(0, 0, 0);
 textSize(25);
 text("Click To Try Again!", 205,250);
-if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
-currentScene = 3;
-     }
+if (mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
+    fill(36, 166, 3);
+    rect(50,227,300,50);
+    fill(0, 0, 0);
+    textSize(25);
+    text("Click To Try Again!", 205,250);
+        if (mouseIsPressed){
+        currentScene = 3;
+        }
+}
 };
 var drawScene3 = function(){
     currentScene = 3;
@@ -713,7 +727,7 @@ ellipse(speedSterX, speedSterY,20,20);
 fill(random(50,350),random(50,350), random(50,350));
 ellipse(speedSterX,speedSterY,starPower,starPower);
 
-
+    
     if (keyIsPressed && keyCode === UP) {
         y -= 4;
     } 
@@ -736,6 +750,27 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
         v -= 4;
     } 
     if (keyIsPressed && keyCode === DOWN) {
+        v += 4;
+    } 
+    if (keyCode === 83) {
+        y += 4;
+    } 
+    if (keyCode === 65) {
+        x -= 4;
+    } 
+    if (keyCode === 68) {
+        x += 4;
+    } 
+    if (keyCode === 65) {
+        z -= 4;
+    } 
+    if (keyCode === 68) {
+        z += 4;
+    } 
+    if (keyCode === 87) {
+        v -= 4;
+    } 
+    if (keyCode === 83) {
         v += 4;
     } 
     if (score > 1000){
@@ -943,6 +978,12 @@ if (score > 50000){
     if (keyIsPressed && keyCode === RIGHT) {
         z -= 4;
     } 
+    if (keyCode === 65){
+        z += 4;
+    }
+    if (keyCode === 68){
+        z -= 4;
+    }
     }
     if (carX > 200){
         carX -= 2;
@@ -981,7 +1022,7 @@ if (score > 50000){
         carX = x + 16;
         if (carX === x + 16 && carY === y + 40){
     if (z > x){
-        z += 2;
+        z += 5;
     }
     if (keyIsPressed && keyCode === DOWN) {
         y += 2;
@@ -1006,7 +1047,31 @@ if (score > 50000){
     } 
     if (keyIsPressed && keyCode === DOWN) {
         v += 2;
-        }
+    }
+    if (keyCode === 87) {
+        y -= 2;
+    } 
+    if (keyCode === 83) {
+        y += 2;
+    } 
+    if (keyCode === 65) {
+        x -= 2;
+    } 
+    if (keyCode === 68) {
+        x += 2;
+    } 
+    if (keyCode === 65) {
+        z -= 2;
+    } 
+    if (keyCode === 68) {
+        z += 2;
+    } 
+    if (keyCode === 87) {
+        v -= 2;
+    } 
+    if (keyCode === 83) {
+        v += 2;
+    } 
         }
     }
     
