@@ -151,9 +151,16 @@ rect(50,227,300,50);
 fill(0, 0, 0);
 textSize(25);
 text("Click To Try Again!", 205,250);
-if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
-currentScene = 3;
-     }
+if (mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
+    fill(36, 166, 3);
+    rect(50,227,300,50);
+    fill(0, 0, 0);
+    textSize(25);
+    text("Click To Try Again!", 205,250);
+        if (mouseIsPressed){
+        currentScene = 3;
+        }
+}
 };
 var drawScene2 = function(){
     currentScene = 2;
@@ -226,9 +233,16 @@ rect(50,227,300,50);
 fill(0, 0, 0);
 textSize(25);
 text("Click To Try Again!", 205,250);
-if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
-currentScene = 3;
-     }
+if (mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
+    fill(36, 166, 3);
+    rect(50,227,300,50);
+    fill(0, 0, 0);
+    textSize(25);
+    text("Click To Try Again!", 205,250);
+        if (mouseIsPressed){
+        currentScene = 3;
+        }
+}
 };
 var drawScene3 = function(){
     currentScene = 3;
