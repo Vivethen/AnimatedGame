@@ -1005,7 +1005,7 @@ if (score > 100000){
         carX = x + 16;
         if (carX === x + 16 && carY === y + 40){
     if (z > x){
-        z += 2;
+        z += 5;
     }
     if (keyIsPressed && keyCode === 40) {
         y += 2;
