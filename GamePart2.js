@@ -1422,7 +1422,7 @@ sun -= 0.5;
 
 //Creators
 //Vivethen Balachandiran - Coding
-//Sam Vrontos - Coding
+//Samuel Vrontos - Coding
 //Alon Halfin - Music
 //Katy...
 
