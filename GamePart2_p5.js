@@ -832,7 +832,7 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
     if (d < y + 40 && d > y - 20 && wwww < x + 40 && wwww > x - 20 && lives === 1) {
         drawScene1();
     }
-    if (d < y + 45 && d > y - 25 && wwww < x + 45 && wwww > x - 25 && starPower > 0) {
+    if (d < y + 50 && d > y - 30 && wwww < x + 50 && wwww > x - 30 && starPower > 0) {
          d = -800;
         fill(255, 0, 0);
         score += 1500;
@@ -880,7 +880,7 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
     if (e < y + 40 && e > y - 20 && wwwww < x + 40 && wwwww > x - 20 && lives === 1) {
         drawScene1();
     }
-    if (e < y + 45 && e > y - 25 && wwwww < x + 45 && wwwww > x - 25 && starPower > 0) {
+    if (e < y + 50 && e > y - 30 && wwwww < x + 50 && wwwww > x - 30 && starPower > 0) {
          e = -800;
         fill(255, 0, 0);
         score += 1000;
@@ -1259,17 +1259,17 @@ if (score > 100000){
         shooterX = 1000;
         score += 5000;
     }
-    if (a < y + 45 && a > y - 25 && w < x + 45 && w > x - 25 && starPower > 0) {
+    if (a < y + 50 && a > y - 30 && w < x + 50 && w > x - 30 && starPower > 0) {
         a = -800;
         fill(255, 0, 0);
         score += 1000;
     }
-    if (b < y + 45 && b > y - 25 && ww < x + 45 && ww > x - 25 && starPower > 0) {
+    if (b < y + 50 && b > y - 30 && ww < x + 50 && ww > x - 30 && starPower > 0) {
         b = -800;
         fill(255, 0, 0);
         score += 2000;
     }
-    if (c < y + 45 && c >  - 25 && www < x + 45 && www > x - 25 && starPower > 0) {
+    if (c < y + 50 && c >  - 30 && www < x + 50 && www > x - 30 && starPower > 0) {
         c = -800;
         fill(255, 0, 0);
         score += 5000;
