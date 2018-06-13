@@ -645,7 +645,7 @@ if (score > 50000){
     ellipse(sun - 2,101,5,5);
     ellipse(sun - 11,98,5,5);
     
-    fill(222, 162, 22);
+    fill(232, 130, 157);
     rect(w,a,20,20);
     rect(ww,b,20,20);
     rect(www,c,20,20);
@@ -912,7 +912,7 @@ if (score > 50000){
     rect(wwwww,e,20,20);
     }
 if (score > 100000){
-    fill(222, 162, 22);
+    fill(232, 130, 157);
     rect(wwww,d,20,20);
     rect(wwwww,e,20,20);
     }
