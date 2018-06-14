@@ -43,6 +43,12 @@ var heightH10 = random(-60, -150);
 var spaceSpeed = 0;
 var starPower = 0;
 var sun = 430;
+var boss = 500;
+var bosslives = 300;
+var borbX = 300;
+var borbY = -1000;
+var healthX = 50;
+var healthY = random(50, 350);
 var x = 81;
 var y = 312;
 var z = 81;
@@ -134,16 +140,9 @@ rect(50,227,300,50);
 fill(0, 0, 0);
 textSize(25);
 text("Click To Try Again!", 205,250);
-if (mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
-    fill(36, 166, 3);
-    rect(50,227,300,50);
-    fill(0, 0, 0);
-    textSize(25);
-    text("Click To Try Again!", 205,250);
-        if (mouseIsPressed){
-        currentScene = 3;
-        }
-}
+if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
+currentScene = 3;
+     }
 };
 var drawScene2 = function(){
     currentScene = 2;
@@ -217,16 +216,9 @@ rect(50,227,300,50);
 fill(0, 0, 0);
 textSize(25);
 text("Click To Try Again!", 205,250);
-if (mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
-    fill(36, 166, 3);
-    rect(50,227,300,50);
-    fill(0, 0, 0);
-    textSize(25);
-    text("Click To Try Again!", 205,250);
-        if (mouseIsPressed){
-        currentScene = 3;
-        }
-}
+if (mouseIsPressed && mouseX > 50 && mouseY > 227 && mouseX < 300 && mouseY < 277) { 
+currentScene = 3;
+     }
 };
 var drawScene3 = function(){
     currentScene = 3;
@@ -619,7 +611,44 @@ if (score > 50000){
     ellipse(sun - 2,101,5,5);
     ellipse(sun - 11,98,5,5);
     
-    fill(222, 162, 22);
+    
+    if (score > 150000){
+    //Final Boss
+    fill(255, 0, 0);
+    rect(boss,0,400,400);
+    fill(34, 191, 61);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    fill(143, 34, 189);
+    rect(boss + random(0,150),random(0,300),40,40);
+    rect(boss + random(0,150),random(0,300),40,40);
+    fill(222, 192, 22);
+    rect(boss + random(0,150),random(0,300),60,60);
+    fill(222, 22, 162);
+    rect(boss + random(0,150),random(0,300),80,80);
+    fill(232, 130, 157);
+    rect(boss + random(0,150),random(0,300),100,100);
+    
+    if (boss <= 280){
+        boss = 280;
+        fill(255, 0, 0);
+        ellipse(borbX,borbY,40,40);
+        borbX -= 3;
+        if (borbX <= 0){
+            borbX = 400;
+            borbY = random(0,400);
+        }
+    }
+    if (spaceSpeed > 1){
+        borbX = 500;
+    }
+    boss -= 1.5;
+    }
+    
+    fill(232, 130, 157);
     rect(w,a,20,20);
     rect(ww,b,20,20);
     rect(www,c,20,20);
@@ -629,6 +658,9 @@ if (score > 50000){
     text("Lives: " + lives, 280, 30);
     }
     
+    if(score > 150000 && starPower > 1){
+        lives = 5;
+    }
 
 
 
@@ -699,6 +731,8 @@ if (shooterX < 270){
     shooterX = 270;
 }
 }
+
+
 //Border
 fill(255, 0, 0);
 rect(-10,0,25,400);
@@ -751,6 +785,9 @@ ellipse(speedSterX,speedSterY,starPower,starPower);
     } 
     if (keyIsPressed && keyCode === DOWN) {
         v += 4;
+    } 
+    if (keyCode === 87) {
+        y -= 4;
     } 
     if (keyCode === 83) {
         y += 4;
@@ -885,7 +922,7 @@ if (score > 50000){
     rect(wwwww,e,20,20);
     }
     if (score > 100000){
-    fill(222, 162, 22);
+    fill(232, 130, 157);
     rect(wwww,d,20,20);
     rect(wwwww,e,20,20);
     }
@@ -1113,6 +1150,12 @@ if (score > 50000){
     }
     }
     
+    fill(255, 255, 255);
+    ellipse(healthX,healthY + 5,20,20);
+    ellipse(healthX - 5,healthY - 5,20,20);
+    ellipse(healthX + 5,healthY - 5,20,20);
+    
+    
     fill(0, 0, 0);
     ellipse(200,200,spaceSpeed,spaceSpeed);
     
@@ -1265,6 +1308,22 @@ if (score > 50000){
         fill(255, 0, 0);
         score += 500;
     }
+    if ( x + 40 > boss) {
+        drawScene1();
+    }
+     if (z > boss) {
+        score += 1000;
+        bosslives -= 1;
+    }
+    if (bosslives === 0){
+        boss = 10000;
+    }
+    if (borbY < y + 20 && borbY > y - 40 && borbX < x + 20 && borbX > x - 20) {
+        drawScene1();
+        borbX = x;
+        borbY = y;
+        
+    }
     
     
     if (spaceSpeed >= w && a) {
@@ -1336,6 +1395,7 @@ if (score > 50000){
         v = 0;
         speedSterX = -100;
         speedSterX += 15;
+        healthX = 600;
         score--;
     }
     if (currentScene === 3){
@@ -1422,7 +1482,7 @@ sun -= 0.5;
 
 //Creators
 //Vivethen Balachandiran - Coding
-//Samuel Vrontos - Coding
+//Sam Vrontos - Coding
 //Alon Halfin - Music
 //Katy...
 
