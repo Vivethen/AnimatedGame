@@ -17,7 +17,7 @@ function draw() {
 
 }
 
-var score = 0;
+var score = 150000;
 var lives = 5;
 var highscore = 0;
 var a = Math.random(5, 395);
