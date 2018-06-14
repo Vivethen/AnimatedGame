@@ -651,6 +651,43 @@ if (score > 50000){
     ellipse(sun - 2,101,5,5);
     ellipse(sun - 11,98,5,5);
     
+    
+    if (score > 150000){
+    //Final Boss
+    fill(255, 0, 0);
+    rect(boss,0,400,400);
+    fill(34, 191, 61);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    rect(boss + random(0,150),random(0,300),20,20);
+    fill(143, 34, 189);
+    rect(boss + random(0,150),random(0,300),40,40);
+    rect(boss + random(0,150),random(0,300),40,40);
+    fill(222, 192, 22);
+    rect(boss + random(0,150),random(0,300),60,60);
+    fill(222, 22, 162);
+    rect(boss + random(0,150),random(0,300),80,80);
+    fill(232, 130, 157);
+    rect(boss + random(0,150),random(0,300),100,100);
+    
+    if (boss <= 280){
+        boss = 280;
+        fill(255, 0, 0);
+        ellipse(borbX,borbY,40,40);
+        borbX -= 3;
+        if (borbX <= 0){
+            borbX = 400;
+            borbY = random(0,400);
+        }
+    }
+    if (spaceSpeed > 1){
+        borbX = 500;
+    }
+    boss -= 1.5;
+    }
+    
     fill(232, 130, 157);
     rect(w,a,20,20);
     rect(ww,b,20,20);
@@ -660,7 +697,10 @@ if (score > 50000){
     text("Score: " + score, 100, 30);
     text("Lives: " + lives, 280, 30);
     }
-
+    
+    if(score > 150000 && starPower > 1){
+        lives = 5;
+    }
 
 
     //Main Character
@@ -1145,6 +1185,20 @@ if (score > 100000){
         }
     }
     }
+	fill(255, 255, 255);
+    ellipse(healthX,healthY + 5,20,20);
+    ellipse(healthX - 5,healthY - 5,20,20);
+    ellipse(healthX + 5,healthY - 5,20,20);
+    
+    if (healthY < y + 40 && healthY > y - 30 && healthX < x + 40 && healthX > x - 20 && lives < 5) {
+        lives++;
+        healthX = 1500;
+    }
+    if (healthX < -100){
+        healthX = 1000;
+    }
+    healthX -= 1.2;
+    
     
     fill(0, 0, 0);
     ellipse(200,200,spaceSpeed,spaceSpeed);
@@ -1301,8 +1355,21 @@ if (score > 100000){
         fill(255, 0, 0);
         score += 500;
     }
-    
-    
+    if ( x + 40 > boss) {
+        drawScene1();
+    }
+     if (z > boss) {
+        bosslives -= 1;
+    }
+    if (bosslives === 0){
+        boss = 10000;
+    }
+    if (borbY < y + 20 && borbY > y - 40 && borbX < x + 20 && borbX > x - 20) {
+        drawScene1();
+        borbX = x;
+        borbY = y;
+        
+    }
     if (spaceSpeed >= w && a) {
         a = -800;
         fill(0, 0, 255);
@@ -1372,6 +1439,7 @@ if (score > 100000){
         v = 0;
         speedSterX = -100;
         speedSterX += 15;
+	healthX = 600;
         score--;
     }
 	if (currentScene === 3){
@@ -1418,6 +1486,7 @@ heightH10 = Math.random(-60, -150);
 spaceSpeed = 0;
 starPower = 0;
 sun = 430;
+healthX = 2000;
 x = 81;
 y = 312;
 z = 81;
