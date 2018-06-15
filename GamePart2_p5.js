@@ -1195,9 +1195,11 @@ if (score > 100000){
     if (healthY < y + 40 && healthY > y - 30 && healthX < x + 40 && healthX > x - 20 && lives < 5) {
         lives++;
         healthX = 1500;
+			  healthY = random(50,350);
     }
     if (healthX < -100){
         healthX = 1000;
+			  healthY = random(50,350);
     }
     healthX -= 1.2;
     
