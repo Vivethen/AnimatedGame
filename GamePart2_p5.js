@@ -652,7 +652,7 @@ if (score > 50000){
     
     if (score > 150000){
     //Final Boss
-    fill(255, 0, 0);
+    fill(138, 0, 0);
     rect(boss,0,400,400);
     fill(34, 191, 61);
     rect(boss + random(0,150),random(0,300),20,20);
@@ -673,6 +673,10 @@ if (score > 50000){
     if (boss <= 280){
         boss = 280;
         fill(255, 0, 0);
+        rect(50, 50, 300, 20);
+        fill(47, 255, 0);
+        rect(50, 50, bosslives, 20);
+        fill(138, 0, 0);
         ellipse(borbX,borbY,40,40);
         borbX -= 3;
         if (borbX <= 0){
