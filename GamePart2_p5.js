@@ -1368,7 +1368,7 @@ if (score > 100000){
     if (bosslives === 0){
         boss = 10000;
     }
-    if (borbY < y + 20 && borbY > y - 40 && borbX < x + 20 && borbX > x - 20) {
+    if (borbY === y && borbX === x) {
         drawScene1();
         borbX = x;
         borbY = y;
