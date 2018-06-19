@@ -11,6 +11,8 @@ Vivethen
 
 - I like how our game was able to use Alon’s music. I would like to add more sound effects like when you lose a life, kill an enemy 
   or boss. Different music for the 5 different stages would be nice as well
+  
+- I got to thank Sam for helping me out throughout the making of "Cubiod Invasion"
 
 Thanks for a great year, I hope to have you as my teacher in my future courses!
 
