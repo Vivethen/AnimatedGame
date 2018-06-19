@@ -10,7 +10,7 @@ Vivethen
 - I have shown the game to some of my friends and cousins and put their feedback into the game
 
 - I like how our game was able to use Alon’s music. I would like to add more sound effects like when you lose a life, kill an enemy 
-  or boss. Different music for the 5 different stages would be nice as well
+  or boss. Different music for the five different stages would be nice as well
   
 - I got to thank Sam for helping me out throughout the making of "Cuboid Invasion"
 
